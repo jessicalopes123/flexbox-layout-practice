@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column-reverse; /* Organiza os elementos no eixo vertical */
+}
+
+body {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* Cabeçalho ocupa toda a largura no topo */
+#cabecalho {
+    background-color: rgb(252, 26, 26);
+    flex: 0 0 20%; /* Define altura relativa */
+}
+
+/* Conteúdo principal com menu lateral */
+.wrapper {
+    display: flex;
+    flex: 2;
+}
+
+#lateral {
+    background-color: #ceeb2b;
+    flex: 0 0 10%; /* Largura relativa */
+}
+
+#conteudo {
+    background-color: rgb(78, 252, 72);
+    flex: 1; /* Ocupa o restante do espaço disponível */
+}
+
+/* Rodapé ocupa toda a largura na base */
+#rodape {
+    background-color: rgb(17, 224, 231);
+    flex: 0 0 10%; /* Define altura relativa */
+}

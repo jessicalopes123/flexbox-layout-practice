@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    display: grid;
+    
+    grid-template-columns: 2fr 10fr 2fr;
+    grid-template-rows: 2fr 10fr 2fr;
+    grid-template-areas: "cabecalho cabecalho cabecalho"
+                          "menu  conteudo lateral"
+                          "menu rodape lateral";
+                    
+
+}
+#lateral{
+    background-color:hsl(26, 44%, 50%);
+    grid-area: lateral;
+
+    
+}
+
+
+#cabecalho{
+    background-color: rgb(237, 18, 18);
+    grid-area: cabecalho;
+
+}
+#menu{
+    background-color: #d6e52e;
+    grid-area: menu;
+}
+#conteudo{
+    background-color: rgb(46, 239, 16);
+    grid-area: conteudo;
+}
+#rodape{
+
+    background-color: rgb(103, 203, 242);
+    grid-area: rodape;
+
+}

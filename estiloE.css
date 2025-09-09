@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100vh;
+    width: 100vw;
+}
+body{
+
+    display: grid;
+    grid-template-columns: 2fr 10fr 10fr ;
+    grid-template-rows: 2fr 10fr 3fr 3fr;
+    grid-template-areas: "cabecalho cabecalho cabecalho"
+                          "menu  conteudo conteudo"
+                          "menu nav nav1 "
+                          "menu rodape rodape";
+                    
+}
+#nav1{
+    background-color:hsl(38, 86%, 19%);
+    grid-area: nav1;
+
+    
+}
+#nav{
+    background-color:hsl(242, 85%, 13%);
+    grid-area: nav;
+    
+
+
+}
+
+#cabecalho{
+    background-color: rgb(223, 15, 15);
+    grid-area: cabecalho;
+
+}
+#menu{
+    background-color: #c4d50f;
+    grid-area: menu;
+}
+#conteudo{
+    background-color: rgb(54, 234, 54);
+    grid-area: conteudo;
+}
+#rodape{
+
+    background-color: rgb(12, 246, 238);
+    grid-area: rodape;
+
+}

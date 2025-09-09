@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Organização principal no eixo vertical */
+}
+
+#cabecalho {
+    background-color: rgb(244, 20, 20);
+    flex: 0 0 15%; /* Altura proporcional ao cabeçalho */
+}
+
+.main-wrapper {
+    display: flex;
+    flex: 1; /* Ocupa o espaço restante vertical */
+}
+
+#menu {
+    background-color: #040b46;
+    flex: 0 0 20%; /* Largura fixa do menu */
+}
+
+#conteudo {
+    background-color: rgb(18, 200, 18);
+    flex: 1; /* Ocupa o espaço restante horizontal */
+    display: flex;
+    flex-direction: column; /* Organização do aside e conteúdo */
+}
+
+#aside {
+    background-color: #7b0b45;
+    flex: 0 0 20%; /* Altura proporcional do aside */
+}
+
+#rodape {
+    background-color: rgb(19, 229, 236);
+    flex: 0 0 10%; /* Altura proporcional do rodapé */
+}
